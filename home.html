@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehndi by Adeema</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#fff5f8;
+    }
+
+    /* NAVBAR */
+    nav{
+        background:#b30059;
+        padding:15px 30px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        color:white;
+        position:sticky;
+        top:0;
+        z-index:10;
+        box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav .logo{
+        font-size:26px;
+        font-weight:bold;
+    }
+    nav ul{
+        list-style:none;
+        display:flex;
+        gap:25px;
+    }
+    nav ul li a{
+        color:white;
+        text-decoration:none;
+        font-size:18px;
+    }
+    nav ul li a:hover{
+        text-decoration:underline;
+    }
+
+    /* SLIDER */
+    .slider{ margin-top:20px; }
+    .slider{
+        width:100%;
+        height:501px;
+        overflow:hidden;
+        position:relative;
+    }
+    .slides{
+        display:flex;
+        width:300%;
+        height:100%;
+        animation:slide 12s infinite;
+    }
+    .slides img{
+        width:100%;
+        height:500px;
+        object-fit:cover;
+    }
+    @keyframes slide{
+        0%{margin-left:0;}
+        33%{margin-left:-100%;}
+        66%{margin-left:-200%;}
+        100%{margin-left:0;}
+    }
+
+    /* SECTION TITLE */
+    h2{
+        margin-top:50px;
+        text-align:center;
+        margin-top:30px;
+        color:#b30059;
+    }
+
+    /* SERVICES */
+    .services{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap:20px;
+        padding:20px;
+    }
+
+    .box{
+        background:white;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        text-align:center;
+    }
+
+    /* EXPERIENCE SECTION */
+    .experience{
+        padding:20px;
+        background:white;
+        margin:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    .experience ul{
+        line-height:2;
+        font-size:18px;
+    }
+
+    /* GALLERY */
+    .gallery{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        padding:30px;
+    }
+    .gallery img{
+        width:100%;
+	height:100%;
+        border-radius:10px;
+    }
+
+    /* BOOKING FORM */
+    form{
+        background:white;
+        margin:20px auto;
+        padding:20px;
+        width:100%;
+        max-width:350px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea{
+        width:100%;
+        padding:10px;
+        margin:10px 0;
+        border-radius:5px;
+        border:1px solid #ccc;
+    }
+    button{
+        width:100%;
+        padding:12px;
+        background:#b30059;
+        color:white;
+        font-size:18px;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    button:hover{
+        background:#800040;
+    }
+
+    /* FOOTER */
+    footer{
+        background: linear-gradient(45deg, #b30059, #ff5fa2);
+        color:white;
+        padding:30px;
+        text-align:center;
+        margin-top:50px;
+        border-top-left-radius:30px;
+        border-top-right-radius:30px;
+        box-shadow:0 -4px 15px rgba(0,0,0,0.3);
+        font-size:18px;
+        letter-spacing:1px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🌸 Mehndi By Adeema</div>
+    <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#book">Book</a></li>
+    </ul>
+</nav>
+</br></br></br>
+<div class="slider">
+    <div class="slides">
+        <img src="./4.jpg">
+        <img src="./5.jpg">
+        <img src="./6.jpg">
+    </div>
+</div>
+</br></br></br></br>
+<h2 id="services" style="margin-top:60px;">Our Services & Prices</h2>
+<div class="services">
+    <div class="box">
+        <h3>Bridal Mehndi</h3>
+        <p>Full Bridal – Rs. 6,000</p>
+    </div>
+    <div class="box">
+        <h3>Party Mehndi</h3>
+        <p>Per Hand – Rs. 300</p>
+    </div>
+    <div class="box">
+        <h3>Kids Mehndi</h3>
+        <p>Per Hand – Rs. 150</p>
+    </div>
+</div>
+</br></br></br>
+<h2 id="experience" style="margin-top:60px;">About My Work</h2>
+<div class="experience">
+    <ul>
+        <li>✨ 3 years of home service experience</li>
+        <li>✨ Worked in Lahore, Multan, Karachi, Faisalabad</li>
+        <li>✨ Served 250+ happy clients</li>
+        <li>✨ 5⭐ customer rating maintained</li>
+        <li>✨ Arabic, Indian, Pakistani Bridal Designs</li>
+    </ul>
+</div>
+</br></br></br>
+<h2 id="gallery" style="margin-top:60px;">Gallery</h2>
+<div class="gallery">
+    <img src="./1.jpg">
+    <img src="./3.jpg">
+    <img src="./7.jpg">
+    <img src="./2.jpg">
+</div>
+</br></br></br>
+<h2 id="book" style="margin-top:60px;">Book Now</h2>
+<form id="bookingForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <textarea id="details" placeholder="Booking Details"></textarea>
+    <button type="submit">Send Booking Request</button>
+</form>
+</br></br></br></br></br></br></br></br>
+<footer>
+    © 2023 Mehndi by Adeema | Home Service | All Rights Reserved
+</footer>
+
+<script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        alert("Your booking request has been sent! We will contact you soon.");
+    });
+</script>
+
+</body>
+</html>
